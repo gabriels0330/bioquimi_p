@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Source sans 3', 'Arial', 'sans serif';
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+body > div > a{
+    text-decoration: none;
+    color:#000000
+}
+.container{
+    width: 100vw;
+    max-width: 98vw;
+    height: 100vh;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 182.66px;
+    height: 231.6px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: inline-block;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width:760px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+    width: 182.66px;
+    height: 100.6px;
+    
+    }
+   
+}

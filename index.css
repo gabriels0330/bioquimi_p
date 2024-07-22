@@ -9,10 +9,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#what_is_it > h1{
+section > h1{
     text-align: center;
     margin-top: 200px;
     font-family: var(--roboto_font);
+}
+#whats_is{
+    margin: auto;
+}
+#whats_is > p{
+    font-family :var(--roboto_font);
+    max-width: 600px;
 }
 
 #content {

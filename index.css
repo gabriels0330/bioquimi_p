@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    max-height: 700px;
 }
 section > h1{
     text-align: center;
@@ -91,9 +92,12 @@ header > nav > picture > img {
 }
 
 nav {
+    
     text-align: center;
 }
-
+#ir{
+    display:none;
+}
 div > img {
     width: 100%;
     max-width: 400px;
@@ -124,7 +128,9 @@ div {
         order: 1;
         width: 100%;
     }
-
+    #ir_1{
+        display: none;
+    }
     #box_2 {
         order: 2;
         width: 100%;

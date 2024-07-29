@@ -175,7 +175,6 @@ div {
     }
 
     #intro_box {
-        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,6 +185,11 @@ div {
     }
 
     #intro_box > span > h1{
+        display: flex;
+        margin-top: 20vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
         font-family :var(--roboto_font);
         max-width: 600px;
         text-align: center;
@@ -193,7 +197,7 @@ div {
     }
     
     #intro_box > img{
-        width: 100%;
+        width: 105%;
         max-width: 450px;
         margin-top: 10vh;
         height: auto;
@@ -247,7 +251,7 @@ div {
         flex-direction: column;
         flex-wrap: nowrap;
         height: 90%;
-        width: 60%;
+        width: 70%;
     }
 }
 }

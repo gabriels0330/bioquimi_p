@@ -54,12 +54,12 @@ body > div > a{
     margin: 10px 0;
 }
 
-.card p {
+.card > p {
     font-size: 14px;
     color: #666;
 }
 
-@media (max-width:760px) {
+@media (max-width:1024px) and (max-height:760px) {
     .container{
         flex-direction: column;
     }
@@ -67,7 +67,8 @@ body > div > a{
     .card{
     width: 182.66px;
     height: 100.6px;
-    
     }
+
+
    
 }

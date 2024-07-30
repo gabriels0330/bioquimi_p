@@ -243,6 +243,7 @@ div {
     }
 
 @media (max-width: 600px) {
+    
     #intro_box {
         margin: auto;
         display: flex;

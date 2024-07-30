@@ -256,11 +256,8 @@ div {
     }
 
     header > nav > picture > img {
-        display: flex;
-        align-items: center;
         width: 10px;
         height: auto;
-        margin: 10px;
     }
 
 }

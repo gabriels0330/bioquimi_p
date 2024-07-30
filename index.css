@@ -141,7 +141,7 @@ div {
     header > nav > picture > img {
         display: flex;
         align-items: center;
-        width: 170px;
+        width: 12vw;
         height: auto;
         margin: 10px;
     }

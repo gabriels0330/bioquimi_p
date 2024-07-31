@@ -19,6 +19,11 @@ body {
     justify-content: space-between;
 }
 
+h2 {
+    font-family: var(--roboto_mono);
+    text-align: center;
+}
+
 main {
     flex: 1;
     font-family: var(--roboto_mono);
@@ -26,12 +31,8 @@ main {
     margin: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-}
-
-main h2{
-    margin-top: 10px;
+    align-items: center;   
+    overflow-y: auto;
 }
 
 main p{
@@ -43,6 +44,7 @@ main p{
     border-top: 1px solid black;
     justify-content: flex-end;
     align-items: flex-end;
+    position: sticky;
     margin: auto;
     width: 100vw;
     height: 15vh;

@@ -22,6 +22,7 @@ body {
 h2 {
     font-family: var(--roboto_mono);
     text-align: center;
+    margin: 13px;
 }
 
 main {

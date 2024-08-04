@@ -204,7 +204,7 @@ section{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 150px);

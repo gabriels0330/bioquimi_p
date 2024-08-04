@@ -146,7 +146,7 @@ div {
     header > nav > picture > img {
         display: flex;
         align-items: center;
-        width: 10vw;
+        width: 12vw;
         height: auto;
         margin: 10px;
     }
@@ -276,7 +276,7 @@ div {
     }
 
     header > nav > picture > img {
-        width: 10vw;
+        width: 13vw;
         height: auto;
     }
 

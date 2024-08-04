@@ -60,15 +60,18 @@ header h2 {
 }
 
 @media screen and (max-width: 800px) {
-    
+
+    *{
+        max-width: 100vw;
+    }
+
     header h2{
         margin-bottom: 3vh;
     }
 
     .content {
         margin: auto;
-        width: 90%;
-        grid-template-columns: repeat(2, 182px);
-        grid-template-rows: repeat(3, 182px);
+        grid-template-columns: repeat(2, 178px);
+        grid-template-rows: repeat(3, 178px);
     }
 }

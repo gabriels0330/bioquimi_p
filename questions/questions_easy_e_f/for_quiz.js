@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionNumber++;
             localStorage.setItem('currentQuestionNumber', questionNumber);
 
-            // Adiciona o número da questão no histórico para navegação
+            // Adiciona o número da questão no histórico
             history.pushState({ questionNumber }, '', `e_f_q_${questionNumber}_f.html`);
 
             // Redireciona para a próxima página
@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Manipulador para eventos de navegação
     window.addEventListener('popstate', (event) => {
         if (event.state && event.state.questionNumber !== undefined) {
+            // Atualiza o número da questão com o valor do estado
             questionNumber = event.state.questionNumber;
             localStorage.setItem('currentQuestionNumber', questionNumber);
 

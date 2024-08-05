@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('correctCount');
         localStorage.removeItem('totalAnswered');
         localStorage.removeItem('currentQuestionNumber');
-        window.location.href = 'efeito_estufa_quiz_1_f.html';
+        window.location.href = 'efeito_estufa_quiz_1_m.html';
     }
 
     // Recupera os valores de acertos e perguntas respondidas do localStorage ou inicia com 0
@@ -128,10 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('currentQuestionNumber', questionNumber);
 
             // Adiciona o número da questão no histórico
-            history.pushState({ questionNumber }, '', `e_f_q_${questionNumber}_f.html`);
+            history.pushState({ questionNumber }, '', `e_f_q_${questionNumber}_m.html`);
 
             // Redireciona para a próxima página
-            window.location.href = `e_f_q_${questionNumber}_f.html`;
+            window.location.href = `e_f_q_${questionNumber}_m.html`;
         }
     });
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('currentQuestionNumber', questionNumber);
 
             // Atualiza a página para refletir a questão anterior
-            window.location.href = `e_f_q_${questionNumber}_f.html`;
+            window.location.href = `e_f_q_${questionNumber}_m.html`;
         }
     });
 });

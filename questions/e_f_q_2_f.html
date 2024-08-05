@@ -1,4 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="our_logos/favicon_logos(1)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="for_quiz.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.cards');
     const nextButton = document.getElementById('next');
     const explain = document.getElementById('explica')
@@ -93,7 +101,56 @@ document.addEventListener('DOMContentLoaded', () => {
             questionChecked = true;
         } else {
             // Redireciona para a página bioquimi.html
-            window.location.href = 'efeito_estufa_quiz_2_f.html';
+            window.location.href = 'e_f_q_3_f.html';
         }
     });
 });
+    </script>
+
+    <title>Efeito estufa | Quiz | Bioquimi </title>
+</head>
+<body>
+
+    <header>
+        <h1>Qual é o principal poluente atmosférico emitido por veículos automotores?</h1>
+
+        <div class="results">
+            <div class="result-item">Acertos: <span id="correctCount">0</span>/15</div>
+            <div class="result-item">Respondidas: <span id="totalAnswered">0</span>/15</div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="cards" data-answer="incorrect">
+                <img src="imagens de alternativas/oxido_nitroso.png" alt="Óxido nitroso">
+                <p>DIÓXIDO DE ENXOFRE (SO<sub>2</sub>)</p>
+            </div>
+
+            <div class="cards" data-answer="correct">
+                <img src="imagens de alternativas/dioxido_de_carbono.png" alt="Dióxido de Carbono">
+                <p>DIÓXIDO DE NITROGÊNIO (NO<sub>2</sub>)</p>
+            </div>
+
+            <div class="cards" data-answer="incorrect">
+                <img src="imagens de alternativas/oxigenio.png" alt="Oxigênio">
+                <p>MONÓXIDO DE CARBONO (CO)</p>
+            </div>
+
+            <div class="cards" data-answer="incorrect">
+                <img src="imagens de alternativas/nitrogenio.png" alt="Nitrogênio">
+                <p>METANO (CH<sub>4</sub>)</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="check">
+        <div id="bolaContainer"></div>
+        <div id="explica"><p>LNO2 é um poluente emitido por veículos automotores, resultante da combustão de combustíveis fósseis.</p></div>
+        <button id="next" type="button" disabled>CONFERIR</button>
+    </div>
+
+    <audio id="audioCorrect" src="imagens de alternativas/level-passed-142971.mp3"></audio>
+    <audio id="audioIncorrect" src="imagens de alternativas/derrota.mp3"></audio>
+</body>
+</html>

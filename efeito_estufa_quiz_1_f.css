@@ -215,12 +215,13 @@ section{
     .cards img {
         width: 80px;
     }
-
+    .cards p{
+        font-size: x-small;
+    }
     .bola, .erro {
         width: 50px;
         height: 50px;
     }
-
     .checked, .error-mark {
         font-size: 20px;
     }

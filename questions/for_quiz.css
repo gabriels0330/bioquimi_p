@@ -225,7 +225,9 @@ section{
     .checked, .error-mark {
         font-size: 20px;
     }
-
+    #explica p{
+        font-size: 4%;
+    }
     #next {
         padding: 8px;
         margin-top: 8px;

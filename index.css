@@ -130,7 +130,7 @@ div {
     height: 50vh;
 }
 
-@media screen and (max-width:1024px) and (max-height:768px) {
+@media (max-width:1024px){
     
     header {
         display: flex;
@@ -252,7 +252,7 @@ div {
         height: 50vh;
     }
 
-@media screen and (max-width: 800px) and (max-height: 800px) {
+@media (max-width: 500px) and (max-height: 880px) {
     
     header {
         display: flex;
@@ -276,7 +276,7 @@ div {
     }
 
     header > nav > picture > img {
-        width: 13vw;
+        width: 10vw;
         height: auto;
     }
 

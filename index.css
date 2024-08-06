@@ -90,7 +90,7 @@ span{
     display: flex;
     border: none;
     background: black;
-    box-shadow: 2px 2px 10px 4px rgb(45, 109, 114);
+    border-bottom: 5px solid rgb(44, 36, 36);
     text-align: center;
     border-radius: 30px;
     cursor: pointer;
@@ -98,6 +98,11 @@ span{
     height: 50px;
     margin: auto;
     margin-top: 10px;
+}
+
+#intro_box > span > button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 #intro_box > span > button > a {
@@ -155,15 +160,20 @@ div {
         display: flex;
         border: none;
         background: black;
-        box-shadow: 2px 2px 10px 4px rgb(45, 109, 114);
+        border-bottom: 5px solid rgb(44, 36, 36);
         text-align: center;
-        border-radius: 30px;
+        border-radius: 20px;
         cursor: pointer;
         width: 90px;
         height: 50px;
         margin: 10px;
     }
-    
+
+    header > nav > button:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
     header > nav > button > a{
         display: flex;
         text-decoration: none;
@@ -302,13 +312,18 @@ div {
         display: flex;
         border: none;
         background: black;
-        box-shadow: 2px 2px 10px 4px rgb(45, 109, 114);
+        border-bottom: 5px solid rgb(44, 36, 36);
         text-align: center;
         border-radius: 30px;
         cursor: pointer;
         width: 90px;
         height: 50px;
         margin: 10px;
+    }
+
+    section > button:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
     }
 
     section button a {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="our_logos/favicon_logos(1)/favicon.ico" type="image/x-icon">
+    <script src="level.js"></script>
     <link rel="stylesheet" href="level.css">
     <title>Nível | Bioquimi</title>
 </head>
@@ -15,19 +16,19 @@
 
     <div class="container"> 
 
-        <div class="card" onclick="location.href='questions_medium_efeito_estufa/efeito_estufa_quiz_1_f.html'">
+        <div class="card" onclick="selectLevel('easy')">
             <img src="our_logos/favicon_logos(1)/podium_3995910_(1).png" alt="icone de pódio">
             <h2>Fácil</h2>
             <p> Começar é o primeiro passo</p>
         </div>
 
-        <div class="card" onclick="location.href='questions_medium_efeito_estufa/efeito_estufa_quiz_1_m.html'">
+        <div class="card" onclick="selectLevel('medium')">
             <img src="our_logos/favicon_logos(1)/trekking_776574_(1).png" alt="icone de caminhada">
             <h2>Médio</h2>
             <p>O meio da caminhada não é o fim</p>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="selectLevel('hard')">
             <img src="our_logos/favicon_logos(1)/alarm_5318724.png" alt="icone de relógio">
             <h2>Difícil</h2>
             <p>Hora de se desafiar</p>

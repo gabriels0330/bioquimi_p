@@ -9,7 +9,7 @@ function selectLevel(level) {
         // Define o caminho da pasta e o padrão do nome dos arquivos
         const folderPath = `questions_${level}_${theme}/`;
         const fileName = `${theme}_quiz_1_${level}.html`;
-        window.location.href = folderPath + fileName;
+        window.location.href = folderPath + fileName+"?"+"quiz_1";
     } else {
         alert('Por favor, selecione um tema primeiro.');
     }

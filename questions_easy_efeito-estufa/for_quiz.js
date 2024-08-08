@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedCard = null;
     let questionChecked = false; // Estado para verificar se a pergunta já foi conferida
 
+    // Verifica se a URL contém o parâmetro "quiz_1"
+    if (window.location.href.includes("?quiz_1")) {
+        localStorage.removeItem('correctCount');
+        localStorage.removeItem('totalAnswered');
+        localStorage.removeItem('currentQuestionNumber');
+    }
+
     // Verifica se a página foi recarregada
     if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
         // Se a página foi recarregada, zera os contadores e redireciona para a primeira página
@@ -123,27 +130,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
             nextButton.textContent = 'PRÓXIMO';
         } else {
-            // Incrementa o número da questão
-            questionNumber++;
-            localStorage.setItem('currentQuestionNumber', questionNumber);
+            if (totalAnswered >= 15) {
+                // Todas as perguntas foram respondidas, redireciona para a página apropriada
+                if (correctCount <= 5) {
+                    window.location.href = 'bronze.html';
+                } else if (correctCount <= 10) {
+                    window.location.href = 'prata.html';
+                } else if (correctCount <= 14) {
+                    window.location.href = 'm-ouro.html';
+                } else if (correctCount == 15) {
+                    window.location.href = 'ouro.html';
+                }
+            } else {
+                // Incrementa o número da questão
+                questionNumber++;
+                localStorage.setItem('currentQuestionNumber', questionNumber);
 
-            // Adiciona o número da questão no histórico
-            history.pushState({ questionNumber }, '', `e_f_q_${questionNumber}_f.html`);
+                // Adiciona o número da questão no histórico
+                history.pushState({ questionNumber }, '', `e_f_q_${questionNumber}_f.html`);
 
-            // Redireciona para a próxima página
-            window.location.href = `e_f_q_${questionNumber}_f.html`;
+                // Redireciona para a próxima página
+                window.location.href = `e_f_q_${questionNumber}_f.html`;
+            }
         }
     });
 
     // Manipulador para eventos de navegação
     window.addEventListener('popstate', (event) => {
-        if (event.state && event.state.questionNumber !== undefined) {
-            // Atualiza o número da questão com o valor do estado
-            questionNumber = event.state.questionNumber;
-            localStorage.setItem('currentQuestionNumber', questionNumber);
-
-            // Atualiza a página para refletir a questão anterior
-            window.location.href = `e_f_q_${questionNumber}_f.html`;
-        }
+        window.location.href = '/level.html';
     });
 });

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('correctCount');
         localStorage.removeItem('totalAnswered');
         localStorage.removeItem('currentQuestionNumber');
-        window.location.href = 'efeito_estufa_quiz_1_f.html';
+        window.location.href = 'efeito-estufa_quiz_1_easy.html';
     }
 
     // Recupera os valores de acertos e perguntas respondidas do localStorage ou inicia com 0

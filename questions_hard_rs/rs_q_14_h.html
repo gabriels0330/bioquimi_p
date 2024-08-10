@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../our_logos/favicon_logos(1)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="for_quiz.css">
+    <script src="for_quiz.js"></script>
+
+    <title>Efeito estufa | Quiz | Bioquimi </title>
+</head>
+<body>
+
+    <header>
+        <h1>COMO O USO DE PRODUTOS BIODEGRADÁVEIS PODE COMPLEMENTAR A PRÁTICA DOS 3R'S?</h1>
+
+        <div class="results">
+            <div class="result-item">Acertos: <span id="correctCount">0</span>/15</div>
+            <div class="result-item">Respondidas: <span id="totalAnswered">0</span>/15</div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="cards" data-answer="incorrect">
+                <img src="../imagens de alternativas/oxido_nitroso.png" alt="Óxido nitroso">
+                <p> AUMENTANDO A QUANTIDADE DE RESÍDUOS NÃO RECICLÁVEIS</p>
+            </div>
+
+            <div class="cards" data-answer="incorrect">
+                <img src="../imagens de alternativas/dioxido_de_carbono.png" alt="Dióxido de Carbono">
+                <p>DESENCORAJANDO A REUTILIZAÇÃO
+                </p>
+            </div>
+
+            <div class="cards" data-answer="correct">
+                <img src="../imagens de alternativas/oxigenio.png" alt="Oxigênio">
+                <p> REDUZINDO O IMPACTO AMBIENTAL AO SE DECOMPOR MAIS RAPIDAMENTE E DE FORMA SEGURA 
+                </p>
+            </div>
+
+            <div class="cards" data-answer="incorrect">
+                <img src="../imagens de alternativas/nitrogenio.png" alt="Nitrogênio">
+                <p>POLUINDO MAIS O SOLO E A ÁGUA</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="check">
+        <div id="bolaContainer"></div>
+        <div id="explica"><p>PRODUTOS BIODEGRADÁVEIS COMPLEMENTAM OS 3R'S AO SE DECOMPOR DE FORMA NATURAL E SEGURA, MINIMIZANDO O IMPACTO AMBIENTAL.</p></div>
+        <button id="next" type="button" disabled>CONFERIR</button>
+    </div>
+
+    <audio id="audioCorrect" src="../imagens de alternativas/level-passed-142971.mp3"></audio>
+    <audio id="audioIncorrect" src="../imagens de alternativas/derrota.mp3"></audio>
+</body>
+</html>

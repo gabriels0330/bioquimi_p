@@ -157,6 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Manipulador para eventos de navegação
     window.addEventListener('popstate', (event) => {
-        window.location.href = 'level.html';
+        window.location.href = '/level.html';
     });
 });

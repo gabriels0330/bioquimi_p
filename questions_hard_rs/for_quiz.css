@@ -58,7 +58,7 @@ section{
 
 .cards img{
     border-radius: 20px;
-    width: 150px;
+    width: 70px;
     height: auto;
 }
 
@@ -180,7 +180,7 @@ section{
     }
 
     .cards img {
-        width: 100px;
+        width: 50px;
     }
 
     .check {
@@ -213,7 +213,7 @@ section{
     }
 
     .cards img {
-        width: 80px;
+        width: 30px;
     }
     .cards p{
         font-size:5%;

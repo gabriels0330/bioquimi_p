@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('correctCount');
         localStorage.removeItem('totalAnswered');
         localStorage.removeItem('currentQuestionNumber');
-        window.location.href = 'rs_quiz_1_hard.html';
+        window.location.href = 'rs_quiz_1_medium.html';
     }
 
     // Recupera os valores de acertos e perguntas respondidas do localStorage ou inicia com 0
@@ -147,10 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('currentQuestionNumber', questionNumber);
 
                 // Adiciona o número da questão no histórico
-                history.pushState({ questionNumber }, '', `rs_q_${questionNumber}_h.html`);
+                history.pushState({ questionNumber }, '', `rs_q_${questionNumber}_m.html`);
 
                 // Redireciona para a próxima página
-                window.location.href = `rs_q_${questionNumber}_h.html`;
+                window.location.href = `rs_q_${questionNumber}_m.html`;
             }
         }
     });

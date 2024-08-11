@@ -51,14 +51,14 @@ section{
     border-radius: 20px;
     border: 1px solid black;
     cursor: pointer;
-    padding: 10%;
+    padding: 15%;
     text-align: center;
     transition: 0.3s;
 }
 
 .cards img{
     border-radius: 20px;
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -176,7 +176,7 @@ section{
     }
 
     .cards {
-        padding: 5%;
+        padding: 10%;
     }
 
     .cards img {

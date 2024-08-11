@@ -51,7 +51,7 @@ section{
     border-radius: 20px;
     border: 1px solid black;
     cursor: pointer;
-    padding: 15%;
+    padding: 10%;
     text-align: center;
     transition: 0.3s;
 }

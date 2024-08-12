@@ -58,7 +58,7 @@ section{
 
 .cards img{
     border-radius: 20px;
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -176,7 +176,7 @@ section{
     }
 
     .cards {
-        padding: 10%;
+        padding: 5%;
     }
 
     .cards img {
@@ -229,8 +229,9 @@ section{
         font-size: 4%;
     }
     #next {
-        padding: 8px;
+        padding: 5px;
         margin-top: 8px;
-        width: 80%;
+        width: 25%;
+        height: 60%;
     }
 }
